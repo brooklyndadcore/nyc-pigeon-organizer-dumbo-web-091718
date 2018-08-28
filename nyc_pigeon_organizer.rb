@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
         feathers = []
         data[:color].keys.each do |i| 
           if data[:color][i].include?(name)
-            feathers << i
+            feathers << i.to_s
           end
         end
 
