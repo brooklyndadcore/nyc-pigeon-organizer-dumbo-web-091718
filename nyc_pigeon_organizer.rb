@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
         sex = []
         data[:gender].keys.each do |j| 
           if data[:gender][j].include?(name)
-            sex << j
+            sex << j.to_s
           end
         end
 
